@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
 
-import { createTheme } from '@mui/material'
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
-const MainTheme = createTheme({
-    
-})
+let MainTheme = createTheme({
+  palette: {
+    primary: { main: "#ffffff" },
+    secondary: { main: "#FDEBD2" },
+  },
+  typography: {
+    fontFamily: [
+      'Open Sans',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+});
 
-export default MainTheme
+// automatizza i testi responsive
+MainTheme = responsiveFontSizes(MainTheme);
+
+export default MainTheme;

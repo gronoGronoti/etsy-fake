@@ -1,0 +1,11 @@
+.header-appbar {
+    background-color: white!important;
+    box-shadow: none!important;
+    color: black!important;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-appbar .head-top-section {
+    display: flex;
+    align-items: center;
+}
