@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 
 import Box from "@mui/material/Box";
+import OutlinedInput from '@mui/material/OutlinedInput'
 import IconButton from "@mui/material/IconButton";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+
 
 const SearchBar = (props) => {
   const [click, setClick] = useState(false);
@@ -23,20 +25,12 @@ const SearchBar = (props) => {
         flex: 1,
       }}
     >
-      <input
-        className="search-bar"
-        type="search"
-        placeholder="Cerca quello che vuoi"
-        onFocus={() => setClick((prev) => !prev)}
-        onClose={() => setClick(false)}
-      />
-      <IconButton
-        className="search-btn"
-        aria-label="search"
-        style={clickStyleOnBtn}
-      >
-        <SearchRoundedIcon className="button-icon" sx={{ mx: 0.6 }} />
-      </IconButton>
+      <div className="search-bar">
+        <OutlinedInput type="search" className="bar" placeholder="Cerca quello che vuoi" />
+        <IconButton aria-label="search-bar-button" className="button" /*onClick={}*/>
+          <SearchRoundedIcon />
+        </IconButton>
+      </div>
     </Box>
   );
 };
