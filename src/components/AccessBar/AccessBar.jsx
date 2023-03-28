@@ -14,7 +14,10 @@ import Tooltip from "@mui/material/Tooltip";
 
 const AccessBar = () => {
   return (
-    <Box className="toggle-if-mobile" sx={{ display: "flex", alignItems: "center" }}>
+    <Box
+      className="toggle-if-mobile"
+      sx={{ display: "flex", alignItems: "center" }}
+    >
       <Button
         variant="text"
         sx={{
@@ -27,28 +30,29 @@ const AccessBar = () => {
         Accedi
       </Button>
 
-      <Tooltip title="Italia">
-        <IconButton aria-label="language" sx={{ ml: 1 }}>
-          <LanguageRoundedIcon sx={{ color: "black" }} />
-        </IconButton>
-      </Tooltip>
-
-      <Tooltip title="Preferiti">
-        <Link to="favorites">
-          <IconButton aria-label="favorites" sx={{ mx: 1 }}>
-            <FavoriteBorderRoundedIcon sx={{ color: "black" }} />
+      <div className="hide-sm-fold">
+        <Tooltip title="Italia">
+          <IconButton aria-label="language" sx={{ ml: 1 }}>
+            <LanguageRoundedIcon sx={{ color: "black" }} />
           </IconButton>
-        </Link>
-      </Tooltip>
+        </Tooltip>
 
-      <Tooltip title="Il mio carrello">
-        <Link to="my-cart">
-          <IconButton aria-label="favorites">
-            <ShoppingCartCheckoutRoundedIcon sx={{ color: "black" }} />
-          </IconButton>
-        </Link>
-      </Tooltip>
-      
+        <Tooltip title="Preferiti">
+          <Link to="favorites">
+            <IconButton aria-label="favorites" sx={{ mx: 1 }}>
+              <FavoriteBorderRoundedIcon sx={{ color: "black" }} />
+            </IconButton>
+          </Link>
+        </Tooltip>
+
+        <Tooltip title="Il mio carrello">
+          <Link to="my-cart">
+            <IconButton aria-label="favorites">
+              <ShoppingCartCheckoutRoundedIcon sx={{ color: "black" }} />
+            </IconButton>
+          </Link>
+        </Tooltip>
+      </div>
     </Box>
   );
 };

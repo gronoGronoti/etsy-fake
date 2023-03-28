@@ -1,3 +1,9 @@
+@media (max-width: 365px) {
+  .hide-sm-fold {
+    display: none;
+  }
+}
+
 @media (max-width: 794px) {
   .toggle-if-mobile {
     flex-grow: 1;

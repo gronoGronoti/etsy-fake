@@ -20,7 +20,7 @@ const SearchBar = (props) => {
         ...props.padding,
         display: "flex",
         alignItems: "center",
-        flexGrow: 1,
+        flex: 1,
       }}
     >
       <input
@@ -35,7 +35,7 @@ const SearchBar = (props) => {
         aria-label="search"
         style={clickStyleOnBtn}
       >
-        <SearchRoundedIcon sx={{ mx: 0.6 }} />
+        <SearchRoundedIcon className="button-icon" sx={{ mx: 0.6 }} />
       </IconButton>
     </Box>
   );
