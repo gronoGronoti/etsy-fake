@@ -6,9 +6,9 @@ const App = () => {
   return (
     <>
       <div className="beige-banner">
-        <Typography variant="h4" sx={{ textAlign: "center", pt: 3 }}>
+        <Typography variant="h4" sx={{ textAlign: "center", pt: 3, fontWeight: 300 }}>
           Scopri articoli da amare. Sostieni negozi indipendenti. Solo su
-          Stepepetsy.
+          Stepetpepessy.
         </Typography>
       </div>
     </>

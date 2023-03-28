@@ -33,6 +33,24 @@ let MainTheme = createTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(','),
+    h1: {
+      fontFamily: 'Roboto Slab',
+    },
+    h2: {
+      fontFamily: 'Roboto Slab',
+    },
+    h3: {
+      fontFamily: 'Roboto Slab',
+    },
+    h4: {
+      fontFamily: 'Roboto Slab',
+    },
+    h5: {
+      fontFamily: 'Roboto Slab',
+    },
+    h6: {
+      fontFamily: 'Roboto Slab',
+    },
   },
 });
 
