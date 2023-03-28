@@ -7,7 +7,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
 
-import { HeroGridLinks } from "../consts/HeroGridLinks";
+import { HeroGridLinks } from "../consts/IndexProductLinks";
 import Typography from "@mui/material/Typography";
 
 const GridItem = (props) => (
@@ -33,7 +33,7 @@ const GridItem = (props) => (
 
 const HeroProductsGrid = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{mb: 5}}>
       <Grid
         container
         direction="row"

@@ -1,0 +1,30 @@
+.product-area {
+    padding-bottom: 0!important;
+}
+
+.product-name {
+  padding-top: 9.6px;
+  font-weight: 600 !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+  line-height: 18px !important;
+  width: 200px;
+}
+
+.product-price {
+  font-weight: 600 !important;
+}
+
+.product-stars {
+  margin: 4px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.discount-sec {
+  display: flex;
+  align-items: baseline;
+}

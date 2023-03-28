@@ -3,10 +3,11 @@ import "./App.css";
 import Typography from "@mui/material/Typography";
 
 import HeroProductsGrid from "./components/index-components/HeroProductsGrid";
+import PopularItems from "./components/index-components/PopularItems";
 
 const App = () => {
   return (
-    <>
+    <main>
       <div>
         <div className="beige-banner"></div>
         <Typography
@@ -18,7 +19,9 @@ const App = () => {
         </Typography>
         <HeroProductsGrid />
       </div>
-    </>
+      
+      <PopularItems />
+    </main>
   );
 };
 
