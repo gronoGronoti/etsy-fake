@@ -30,8 +30,8 @@ const ProductCard = (props) => {
           sx={{
             boxShadow: "0 2px 5px rgba(0, 0, 0, 0.35)",
             borderRadius: "5px",
-            width: "200px",
-            height: "160px",
+            width: "260px",
+            height: "200px",
             objectFit: "cover",
           }}
         />
