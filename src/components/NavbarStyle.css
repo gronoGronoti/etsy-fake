@@ -16,6 +16,7 @@
   font-size: 13px;
   color: black;
   border-bottom: 2px solid transparent;
+  font-weight: 300;
 
   transition: color .15s, border-bottom .15s;
 }
