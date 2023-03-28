@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import ProductCard from "../Cards/ProductCard";
 import Grid from "@mui/material/Grid";
 import { PopularItemsRN } from "../consts/IndexProductLinks";
+import { textAlign } from "@mui/system";
 
 const PopularItems = () => {
   return (
@@ -12,7 +13,7 @@ const PopularItems = () => {
       <Typography
         variant="h4"
         color="initial"
-        sx={{ fontFamily: "Nunito", fontWeight: 600, mb: 1 }}
+        sx={{ fontFamily: "Nunito", fontWeight: 600, mb: 1, textAlign: {xs: "center", sm: "start"} }}
       >
         Regali popolari in questo momento
       </Typography>
@@ -20,9 +21,14 @@ const PopularItems = () => {
       <Grid
         container
         direction="row"
-        justifyContent="space-between"
         alignItems="top"
         wrap="wrap"
+        sx={{
+          justifyContent: {
+            xs: "center",
+            sm: "space-between"
+          }
+        }}
       >
         {PopularItemsRN.map((Entry, i) => (
           <Grid item key={Entry.to}>
