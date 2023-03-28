@@ -38,7 +38,7 @@ const HeroProductsGrid = () => {
         container
         direction="row"
         justifyContent="space-evenly"
-        alignItems="center"
+        alignItems="top"
         wrap="wrap"
       >
         {HeroGridLinks.map((Entry, i) => (
