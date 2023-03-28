@@ -1,7 +1,22 @@
 .beige-banner {
-    position: "absolute";
+    z-index: -1;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 175px;
     background-color: #FDEBD2;
-    top: 0;
-    left: 0;
-    height: 200px;
+}
+@media (max-width: 600px) {
+    .beige-banner {
+    height: 550px;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .beige-banner {
+    height: 380px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+    .beige-banner {
+    height: 210px;
+    }
 }

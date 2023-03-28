@@ -1,0 +1,21 @@
+.hero-item {
+    height: 180px;
+}
+
+.hero-item .category-image {
+  width: 100px !important;
+  height: 100px !important;
+  border: 1px solid rgba(0, 0, 0, 0.35) !important;
+
+  transition: transform .15s, box-shadow .15s;
+}
+.hero-item .category-image:hover {
+    transform: scale(1.2)!important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+}
+
+.hero-item .text {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
