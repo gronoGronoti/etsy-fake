@@ -8,6 +8,7 @@ import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import SearchBar from "./SearchBar/SearchBar";
+import AccessBar from "./AccessBar/AccessBar";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,8 @@ const Navbar = () => {
 
           <DisplayLogo url="/" />
           <SearchBar />
-          
+          <AccessBar />
+
         </Container>
       </AppBar>
 
