@@ -1,7 +1,7 @@
 .search-box {
   width: -webkit-fill-available !important;
   padding: 0 !important;
-  border-radius: 20px !important;
+  border-radius: 18px !important;
   border: 2px solid black !important;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .search-btn {
-  border-radius: 17px !important;
+  border-radius: 15px !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
