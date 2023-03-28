@@ -16,7 +16,7 @@ const Router = () => {
           element: <App />,
         },
         {
-          path: "not-found",
+          path: "*",
           element: <NotFound />,
         },
       ],
