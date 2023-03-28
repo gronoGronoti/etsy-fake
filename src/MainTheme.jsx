@@ -21,7 +21,7 @@ let MainTheme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Open Sans',
+      'Nunito',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
