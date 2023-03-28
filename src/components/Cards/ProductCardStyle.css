@@ -11,7 +11,7 @@
   -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
   white-space: pre-wrap; /* let the text wrap preserving spaces */
   line-height: 18px !important;
-  width: 200px;
+  width: 260px;
 }
 
 .product-price {
