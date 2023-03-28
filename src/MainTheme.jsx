@@ -3,6 +3,18 @@ import React from "react";
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
 let MainTheme = createTheme({
+  components: {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          padding: "0.7rem",
+          fontSize: "0.9em",
+          color: "white",
+          backgroundColor: "rgba(0, 0, 0, 85%)"
+        }
+      }
+    }
+  },
   palette: {
     primary: { main: "#ffffff" },
     secondary: { main: "#FDEBD2" },

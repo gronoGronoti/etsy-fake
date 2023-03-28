@@ -1,0 +1,9 @@
+@media (max-width: 794px) {
+  .toggle-if-mobile {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  .hide-if-mobile {
+    display: none;
+  }
+}

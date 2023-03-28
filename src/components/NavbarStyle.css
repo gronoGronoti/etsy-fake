@@ -23,3 +23,23 @@
   color: rgb(36, 36, 36);
   border-bottom: 2px solid rgb(36, 36, 36);
 }
+
+.hide-if-mobile {
+  flex: 1;
+}
+@media (max-width: 794px) {
+  .hide-if-mobile {
+    display: none;
+  }
+  .show-if-mobile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+}
+@media (min-width: 795px) {
+  .show-if-mobile {
+    display: none;
+    padding-bottom: 8px;
+  }
+}

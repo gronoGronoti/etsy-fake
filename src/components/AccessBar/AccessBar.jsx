@@ -1,4 +1,6 @@
 import React from "react";
+import "./AccessBar.css";
+
 import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
@@ -12,7 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 const AccessBar = () => {
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box className="toggle-if-mobile" sx={{ display: "flex", alignItems: "center" }}>
       <Button
         variant="text"
         sx={{

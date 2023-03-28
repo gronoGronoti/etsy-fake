@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   const [click, setClick] = useState(false);
   const clickStyleOnBtn = {
     background: click ? "black" : "#f0f0f0",
@@ -16,9 +16,8 @@ const SearchBar = () => {
     <Box
       className="search-box"
       sx={{
-        p: 0,
-        ml: 2,
-        mr: 3,
+        ...props.margin,
+        ...props.padding,
         display: "flex",
         alignItems: "center",
         flexGrow: 1,
