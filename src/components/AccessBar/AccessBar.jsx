@@ -7,7 +7,8 @@ import IconButton from "@mui/material/IconButton";
 
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
-import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
+import ShoppingCartCheckoutRoundedIcon from "@mui/icons-material/ShoppingCartCheckoutRounded";
+import Tooltip from "@mui/material/Tooltip";
 
 const AccessBar = () => {
   return (
@@ -24,21 +25,28 @@ const AccessBar = () => {
         Accedi
       </Button>
 
-      <IconButton aria-label="language" sx={{ ml: 1 }}>
-        <LanguageRoundedIcon sx={{ color: "black" }} />
-      </IconButton>
-
-      <Link to="favorites">
-        <IconButton aria-label="favorites" sx={{ mx: 1 }}>
-          <FavoriteBorderRoundedIcon sx={{ color: "black" }} />
+      <Tooltip title="Italia">
+        <IconButton aria-label="language" sx={{ ml: 1 }}>
+          <LanguageRoundedIcon sx={{ color: "black" }} />
         </IconButton>
-      </Link>
+      </Tooltip>
 
-      <Link to="my-cart">
-        <IconButton aria-label="favorites">
-          <ShoppingCartCheckoutRoundedIcon sx={{ color: "black" }} />
-        </IconButton>
-      </Link>
+      <Tooltip title="Preferiti">
+        <Link to="favorites">
+          <IconButton aria-label="favorites" sx={{ mx: 1 }}>
+            <FavoriteBorderRoundedIcon sx={{ color: "black" }} />
+          </IconButton>
+        </Link>
+      </Tooltip>
+
+      <Tooltip title="Il mio carrello">
+        <Link to="my-cart">
+          <IconButton aria-label="favorites">
+            <ShoppingCartCheckoutRoundedIcon sx={{ color: "black" }} />
+          </IconButton>
+        </Link>
+      </Tooltip>
+      
     </Box>
   );
 };

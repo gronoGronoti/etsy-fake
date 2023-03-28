@@ -6,20 +6,63 @@ import DisplayLogo from "./DisplayLogo";
 
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+
 import SearchBar from "./SearchBar/SearchBar";
 import AccessBar from "./AccessBar/AccessBar";
+import { BottomSecNavLinks } from "./consts/NavbarLinks";
+
+const TabPanel = (props) => {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+const a11yProps = (index) => {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 
 const Navbar = () => {
   return (
     <>
-      <AppBar className="header-appbar">
+      <AppBar position="static" className="header-appbar">
         <Container className="head-top-section" maxWidth="xl" sx={{ py: 1.5 }}>
-
           <DisplayLogo url="/" />
           <SearchBar />
           <AccessBar />
-
+        </Container>
+        <Container
+          className="head-bottom-section"
+          maxWidth="xl"
+        >
+          <Stack direction={"row"} sx={{display: "flex", justifyContent: "space-between"}}>
+            {
+              BottomSecNavLinks.map((Entry, i) => (
+                <Stack item key={Entry.to}>
+                  <Link className="stack-link" id={i} to={Entry.to}>
+                    {Entry.alt}
+                  </Link>
+                </Stack>
+              ))
+            }
+          </Stack>
         </Container>
       </AppBar>
 

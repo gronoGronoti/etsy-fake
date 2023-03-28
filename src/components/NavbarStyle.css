@@ -9,3 +9,17 @@
   display: flex;
   align-items: center;
 }
+
+.head-bottom-section .stack-link {
+  text-decoration: none;
+  padding-bottom: 8px!important;
+  font-size: 13px;
+  color: black;
+  border-bottom: 2px solid transparent;
+
+  transition: color .15s, border-bottom .15s;
+}
+.head-bottom-section .stack-link:hover {
+  color: rgb(36, 36, 36);
+  border-bottom: 2px solid rgb(36, 36, 36);
+}
