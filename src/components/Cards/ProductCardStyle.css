@@ -28,3 +28,26 @@
   display: flex;
   align-items: baseline;
 }
+
+.card-media {
+  width: 260px!important;
+  height: 200px!important;
+}
+@media (max-width: 528px) {
+  .card-media {
+    width: 100%!important;
+    height: 300px!important;
+  }
+  .product-name {
+    width: 100%;
+  }
+}
+@media (min-width: 529px) and (max-width: 1470px) {
+  .card-media {
+    width: 220px!important;
+    height: 180px!important;
+  }
+  .product-name {
+    width: 220px;
+  }
+} 

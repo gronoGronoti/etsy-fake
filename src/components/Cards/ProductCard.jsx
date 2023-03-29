@@ -23,6 +23,7 @@ const ProductCard = (props) => {
         sx={{ display: "inline-block", p: 1.3 }}
       >
         <CardMedia
+          className="card-media"
           component={props.media.includes("video") ? "video" : "image"}
           title="Category image"
           image={props.media}
@@ -30,8 +31,6 @@ const ProductCard = (props) => {
           sx={{
             boxShadow: "0 2px 5px rgba(0, 0, 0, 0.35)",
             borderRadius: "5px",
-            width: "260px",
-            height: "200px",
             objectFit: "cover",
           }}
         />
