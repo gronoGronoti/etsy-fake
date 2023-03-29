@@ -40,7 +40,7 @@ const ProductCard = (props) => {
             {props.title}
           </Typography>
           <div className="product-stars">
-            <Rating value={props.stars} readOnly size="small" />
+            <Rating value={props.stars} readOnly size="small" sx={{mr: 1}} />
             <Typography variant="caption" color="initial">
               ({props.reviews})
             </Typography>
