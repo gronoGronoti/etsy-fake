@@ -24,7 +24,7 @@ const ProductCard = (props) => {
       >
         <CardMedia
           className="card-media"
-          component={props.media.includes("video") ? "video" : "image"}
+          component={props.media.includes("video") ? "video" : "img"}
           title="Category image"
           image={props.media}
           autoPlay
