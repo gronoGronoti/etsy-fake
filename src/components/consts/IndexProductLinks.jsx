@@ -47,6 +47,7 @@ export const PopularItemsRN = [
     reviews: 1111,
     media: testImg1,
     hasFreeShipping: false,
+    stock: 10,
   },
   {
     articleId: 420,
@@ -59,6 +60,7 @@ export const PopularItemsRN = [
     media: testImg2,
     hasFreeShipping: true,
     hasDiscount: false,
+    stock: 10,
   },
   {
     articleId: 709,
@@ -84,6 +86,7 @@ export const PopularItemsRN = [
       "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4",
     hasFreeShipping: false,
     hasDiscount: true,
+    stock: 10,
   },
   {
     articleId: 4316,
@@ -97,6 +100,7 @@ export const PopularItemsRN = [
       "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/lake_ffpzbh.mp4",
     hasFreeShipping: false,
     hasDiscount: true,
+    stock: 10,
   },
 ];
 

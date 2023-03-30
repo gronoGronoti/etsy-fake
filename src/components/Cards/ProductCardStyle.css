@@ -18,12 +18,6 @@
   font-weight: 600 !important;
 }
 
-.product-stars {
-  margin: 4px 0;
-  display: inline-flex;
-  align-items: center;
-}
-
 .discount-sec {
   display: flex;
   align-items: baseline;

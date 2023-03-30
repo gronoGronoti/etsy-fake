@@ -13,6 +13,8 @@ import Button from "@mui/material/Button";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
 
 import SuggestedArticles from "./SuggestedArticles";
+import Ratings from "../Ratings";
+import QuantityTab from "./QuantityTab";
 
 const ArticlePage = () => {
   let article = useParams();
@@ -30,11 +32,11 @@ const ArticlePage = () => {
               alignItems="top"
               wrap="wrap"
             >
-              <Grid xs={7} item id={i} sx={{ display: "flex" }}>
+              <Grid xs={12} md={7} item id={i} sx={{ display: "flex" }}>
                 <Container
                   className="image-container"
                   maxWidth="md"
-                  sx={{ py: 2 }}
+                  sx={{ p: 2 }}
                 >
                   <CardMedia
                     component={entry.media.includes(".jpg") ? "img" : "video"}
@@ -51,8 +53,8 @@ const ArticlePage = () => {
                   />
                 </Container>
               </Grid>
-              <Grid xs={3.7} item id={i + 1}>
-                <Box sx={{ py: 2, width: "100%" }}>
+              <Grid xs={12} md={3.5} item id={i + 1}>
+                <Box sx={{ p: 2, width: "100%" }}>
                   {entry.hasDiscount ? (
                     <div className="price-w-discount">
                       <Typography
@@ -106,6 +108,11 @@ const ArticlePage = () => {
                       Segui
                     </Button>
                   </div>
+
+                  <Ratings
+                    starNumber={entry.stars}
+                    numOfReviews={entry.reviews + " Recensioni"}
+                  />
                 </Box>
               </Grid>
             </Grid>

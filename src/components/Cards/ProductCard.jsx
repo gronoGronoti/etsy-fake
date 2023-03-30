@@ -6,7 +6,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import Rating from "@mui/material/Rating";
+import Ratings from "../Ratings";
 
 const ProductCard = (props) => {
   const [hover, setHover] = useState(false);
@@ -39,27 +39,22 @@ const ProductCard = (props) => {
           <Typography className="product-name" variant="body1" color="initial">
             {props.title}
           </Typography>
-          <div className="product-stars">
-            <Rating value={props.stars} readOnly size="small" sx={{mr: 1}} />
-            <Typography variant="caption" color="initial">
-              ({props.reviews})
-            </Typography>
-          </div>
+          <Ratings starNumber={props.stars} numOfReviews={props.reviews} />
 
           {props.hasDiscount ? (
             <div className="discount-sec">
               <Typography
-              className="product-price"
+                className="product-price"
                 variant="body1"
                 color="initial"
               >
                 € {props.price}
               </Typography>
               <Typography
-              className="product-price"
+                className="product-price"
                 variant="caption"
                 color="error"
-                sx={{textDecoration: "line-through", ml: 1}}
+                sx={{ textDecoration: "line-through", ml: 1 }}
               >
                 € {props.oldPrice}
               </Typography>

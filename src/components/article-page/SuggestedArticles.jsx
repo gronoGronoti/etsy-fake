@@ -50,7 +50,7 @@ const SuggestedArticles = () => {
         {PopularItemsRN.map((Entry, i) => (
           <Grid item key={Entry.articleId}>
             <ProductCard
-              to={`listing/${Entry.articleId}`}
+              to={`../listing/${Entry.articleId}`}
               media={Entry.media}
               title={Entry.alt}
               price={Entry.price}
