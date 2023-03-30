@@ -88,3 +88,31 @@ export const PopularItemsRN = [
     hasDiscount: true,
   },
 ]
+
+export const PopularCategoriesList = [
+  {
+    to: "anniversary-presents",
+    alt: "Regali di anniversario",
+    media: "https://i.etsystatic.com/16459352/r/il/3fd54a/4647292021/il_1588xN.4647292021_1izn.jpg",
+  },
+  {
+    to: "presents-for-him",
+    alt: "Regali per lui",
+    media: "https://i.etsystatic.com/9598617/r/il/291abd/2848230978/il_1588xN.2848230978_99fh.jpg",
+  },
+  {
+    to: "presents-for-her",
+    alt: "Regali per lei",
+    media: "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
+  },
+  {
+    to: "custom-present-ideas",
+    alt: "Idee regalo personalizzate",
+    media: "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
+  },
+  {
+    to: "marriage-presents",
+    alt: "Regali di matrimonio",
+    media: "https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_1588xN.4263660916_c7z1.jpg",
+  },
+]

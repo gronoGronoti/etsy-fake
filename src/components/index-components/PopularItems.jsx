@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import ProductCard from "../Cards/ProductCard";
 import Grid from "@mui/material/Grid";
 import { PopularItemsRN } from "../consts/IndexProductLinks";
-import { textAlign } from "@mui/system";
 
 const PopularItems = () => {
   return (
