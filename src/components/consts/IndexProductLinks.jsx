@@ -35,7 +35,7 @@ export const HeroGridLinks = [
 
 export const PopularItemsRN = [
   {
-    to: "listing/" + Math.round(Math.random()*1000),
+    articleId: 69,
     alt: "Pamper Gift Box, Relax, Pamper Hamper, For Her, Care Package, Letterbox, Mother’s Day, Birthday, Pick Me Up, Hug in a Box, Valentine’s Day",
     price: 14.48,
     stars: 5,
@@ -44,7 +44,7 @@ export const PopularItemsRN = [
     hasFreeShipping: false,
   },
   {
-    to: "listing/" + Math.round(Math.random()*1000),
+    articleId: 420,
     alt: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
     price: 23.16,
     oldPrice: 28.25,
@@ -55,7 +55,7 @@ export const PopularItemsRN = [
     hasDiscount: false,
   },
   {
-    to: "listing/" + Math.round(Math.random()*1000),
+    articleId: 709,
     alt: "Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
     price: 10.64,
     oldPrice: 12.98,
@@ -66,7 +66,7 @@ export const PopularItemsRN = [
     hasDiscount: true,
   },
   {
-    to: "listing/" + Math.round(Math.random()*1000),
+    articleId: 7109,
     alt: "Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABLE",
     price: 10.03,
     oldPrice: 12.24,
@@ -77,7 +77,7 @@ export const PopularItemsRN = [
     hasDiscount: true,
   },
   {
-    to: "listing/" + Math.round(Math.random()*1000),
+    articleId: 4316,
     alt: "POCKET Custom Portrait from Photo Sweatshirt, Custom Couple Portrait, Couples Portrait, Personalized Gift, Custom Gifts, Family Portrait",
     price: 23.54,
     oldPrice: 28.72,

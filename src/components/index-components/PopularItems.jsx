@@ -30,9 +30,9 @@ const PopularItems = () => {
         }}
       >
         {PopularItemsRN.map((Entry, i) => (
-          <Grid item key={Entry.to}>
+          <Grid item key={Entry.articleId}>
             <ProductCard
-              to={Entry.to}
+              to={`listing/${Entry.articleId}`}
               media={Entry.media}
               title={Entry.alt}
               price={Entry.price}

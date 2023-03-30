@@ -2,10 +2,11 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import App from "../../App";
 import NotFound from "../../NotFound";
+import ArticlePage from "../ArticlePage";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 
-const Router = () => {
+const Router = (props) => {
   const routes = useRoutes([
     {
       path: "/",
@@ -14,6 +15,10 @@ const Router = () => {
         {
           index: true,
           element: <App />,
+        },
+        {
+          path: "listing/:id",
+          element: <ArticlePage />,
         },
         {
           path: "*",
