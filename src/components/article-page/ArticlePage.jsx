@@ -47,7 +47,7 @@ const ArticlePage = () => {
                       boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.35)",
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      objectFit: entry.media.includes(".jpg") ? "cover" : "contain",
                       borderRadius: "15px",
                     }}
                   />
