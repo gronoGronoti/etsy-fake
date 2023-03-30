@@ -1,0 +1,22 @@
+.image-container {
+    width: 650px !important;
+    height: 635px !important;
+}
+
+.price-w-discount {
+    display: flex;
+    align-items: baseline;
+}
+.price-w-discount .old-price {
+    text-decoration: line-through;
+}
+
+.seller-section {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+.seller-section .seller {
+    display: flex;
+    align-items: baseline;
+}
