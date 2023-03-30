@@ -33,86 +33,102 @@ export const HeroGridLinks = [
   },
 ];
 
+import testImg1 from "../../assets/prod.images/GJh7QbOT_2x.jpg";
+import testImg2 from "../../assets/prod.images/FEbeUQNZ_2x.jpg";
+import testImg3 from "../../assets/prod.images/Bi3RArf1_2x.jpg";
+
 export const PopularItemsRN = [
   {
     articleId: 69,
     alt: "Pamper Gift Box, Relax, Pamper Hamper, For Her, Care Package, Letterbox, Mother’s Day, Birthday, Pick Me Up, Hug in a Box, Valentine’s Day",
+    seller: "Peppiniello 'o Fung",
     price: 14.48,
     stars: 5,
     reviews: 1111,
-    media: "https://i.etsystatic.com/24921631/r/il/6cadaa/4207115880/il_340x270.4207115880_2hhg.jpg",
+    media: testImg1,
     hasFreeShipping: false,
   },
   {
     articleId: 420,
     alt: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
+    seller: "Marinella 'a Cotica",
     price: 23.16,
     oldPrice: 28.25,
     stars: 5,
     reviews: 14884,
-    media: "https://i.etsystatic.com/32477306/c/2000/1589/0/256/il/0bcd64/3491080620/il_340x270.3491080620_oh18.jpg",
+    media: testImg2,
     hasFreeShipping: true,
     hasDiscount: false,
   },
   {
     articleId: 709,
     alt: "Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
+    seller: "Michele 'o Prievt",
     price: 10.64,
     oldPrice: 12.98,
     stars: 5,
     reviews: 10747,
-    media: "https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg",
+    media: testImg3,
     hasFreeShipping: false,
     hasDiscount: true,
   },
   {
     articleId: 7109,
     alt: "Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABLE",
+    seller: "Samuele 'o bassista classic",
     price: 10.03,
     oldPrice: 12.24,
     stars: 5,
     reviews: 14638,
-    media: "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4",
+    media:
+      "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4",
     hasFreeShipping: false,
     hasDiscount: true,
   },
   {
     articleId: 4316,
     alt: "POCKET Custom Portrait from Photo Sweatshirt, Custom Couple Portrait, Couples Portrait, Personalized Gift, Custom Gifts, Family Portrait",
+    seller: "Renato morto",
     price: 23.54,
     oldPrice: 28.72,
     stars: 5,
     reviews: 21394,
-    media: "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/lake_ffpzbh.mp4",
+    media:
+      "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/lake_ffpzbh.mp4",
     hasFreeShipping: false,
     hasDiscount: true,
   },
-]
+];
 
 export const PopularCategoriesList = [
   {
     to: "anniversary-presents",
     alt: "Regali di anniversario",
-    media: "https://i.etsystatic.com/16459352/r/il/3fd54a/4647292021/il_1588xN.4647292021_1izn.jpg",
+    media:
+      "https://i.etsystatic.com/16459352/r/il/3fd54a/4647292021/il_1588xN.4647292021_1izn.jpg",
   },
   {
     to: "presents-for-him",
     alt: "Regali per lui",
-    media: "https://i.etsystatic.com/9598617/r/il/291abd/2848230978/il_1588xN.2848230978_99fh.jpg",
+    media:
+      "https://i.etsystatic.com/9598617/r/il/291abd/2848230978/il_1588xN.2848230978_99fh.jpg",
   },
   {
     to: "presents-for-her",
     alt: "Regali per lei",
-    media: "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
+    media:
+      "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
   },
   {
     to: "custom-present-ideas",
     alt: "Idee regalo personalizzate",
-    media: "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
+    media:
+      "https://i.etsystatic.com/12794159/r/il/2eb960/1684539712/il_1588xN.1684539712_ot78.jpg",
   },
   {
     to: "marriage-presents",
     alt: "Regali di matrimonio",
-    media: "https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_1588xN.4263660916_c7z1.jpg",
+    media:
+      "https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_1588xN.4263660916_c7z1.jpg",
   },
-]
+];
