@@ -1,0 +1,41 @@
+.cat-card {
+  width: 260px !important;
+  margin: 0 5px;
+}
+@media (max-width: 982px) {
+  .cat-card {
+    margin-top: 1rem;
+  }
+}
+
+.cat-card-image {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+@media (max-width: 528px) {
+  .cat-card {
+    width: 100% !important;
+  }
+  .cat-card-image {
+    height: 300px !important;
+  }
+}
+
+@media (min-width: 529px) and (max-width: 1470px) {
+  .cat-card {
+    width: 220px !important;
+  }
+  .cat-card-image {
+    height: 180px !important;
+  }
+}
+
+.cat-card-content {
+  padding: 0.5rem !important;
+}
+
+.cat-card-content .cat-content-text {
+  text-align: center;
+  font-size: 18px;
+}

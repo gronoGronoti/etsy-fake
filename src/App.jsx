@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 
 import HeroProductsGrid from "./components/index-components/HeroProductsGrid";
 import PopularItems from "./components/index-components/PopularItems";
+import PopularCategories from "./components/index-components/PopularCategories";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       </div>
       
       <PopularItems />
+      <PopularCategories />
     </main>
   );
 };

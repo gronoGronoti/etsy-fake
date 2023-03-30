@@ -174,7 +174,6 @@ const Footer = () => {
                   {entry.alt}
                 </Typography>
                 {entry.children.map((item, j) => (
-                  <>
                   <Grid item key={item.to} id={j} sx={{ py: 0.3 }}>
                     <Link to={item.to} style={{ textDecoration: "none" }}>
                       <Typography
@@ -189,7 +188,6 @@ const Footer = () => {
                       </Typography>
                     </Link>
                   </Grid>
-                  </>
                 ))}
               </Grid>
             ))}
