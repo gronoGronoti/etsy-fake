@@ -14,6 +14,7 @@ import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded
 
 import SuggestedArticles from "./SuggestedArticles";
 import Ratings from "../Ratings";
+import QuantityTab from "./QuantityTab"
 
 const ArticlePage = () => {
   let article = useParams();
@@ -112,6 +113,8 @@ const ArticlePage = () => {
                     starNumber={entry.stars}
                     numOfReviews={entry.reviews + " Recensioni"}
                   />
+
+                  <QuantityTab />
                 </Box>
               </Grid>
             </Grid>
