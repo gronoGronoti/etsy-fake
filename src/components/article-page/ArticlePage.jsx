@@ -16,6 +16,7 @@ import CardGiftcardRoundedIcon from "@mui/icons-material/CardGiftcardRounded";
 import SuggestedArticles from "./SuggestedArticles";
 import Ratings from "../Ratings";
 import QuantityTab from "./QuantityTab";
+import Description from "./article-description/Description";
 
 const ArticlePage = () => {
   let article = useParams();
@@ -33,7 +34,7 @@ const ArticlePage = () => {
               alignItems="top"
               wrap="wrap"
             >
-              <Grid xs={12} md={7} item id={i} sx={{ display: "flex" }}>
+              <Grid xs={12} md={7} item id={i} sx={{ display: "flex", alignItems: "top" }}>
                 <Container
                   className="image-container"
                   maxWidth="md"
@@ -128,12 +129,14 @@ const ArticlePage = () => {
                     Aggiungi al carrello
                   </Button>
 
-                  <div style={{display: "inline-flex", alignItems: "center"}}>
+                  <div style={{ display: "inline-flex", alignItems: "center" }}>
                     <CardGiftcardRoundedIcon />
-                    <Typography variant="body2" color="initial" sx={{ml: 1}}>
+                    <Typography variant="body2" color="initial" sx={{ ml: 1 }}>
                       Confezione regalo disponibile.
                     </Typography>
                   </div>
+
+                  <Description desc={entry.alt} />
                 </Box>
               </Grid>
             </Grid>
