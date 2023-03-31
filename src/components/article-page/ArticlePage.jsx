@@ -11,10 +11,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
+import CardGiftcardRoundedIcon from "@mui/icons-material/CardGiftcardRounded";
 
 import SuggestedArticles from "./SuggestedArticles";
 import Ratings from "../Ratings";
-import QuantityTab from "./QuantityTab"
+import QuantityTab from "./QuantityTab";
 
 const ArticlePage = () => {
   let article = useParams();
@@ -47,7 +48,9 @@ const ArticlePage = () => {
                       boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.35)",
                       width: "100%",
                       height: "100%",
-                      objectFit: entry.media.includes(".jpg") ? "cover" : "contain",
+                      objectFit: entry.media.includes(".jpg")
+                        ? "cover"
+                        : "contain",
                       borderRadius: "15px",
                     }}
                   />
@@ -115,6 +118,22 @@ const ArticlePage = () => {
                   />
 
                   <QuantityTab />
+
+                  <Button
+                    className="add-to-cart-btn"
+                    variant="contained"
+                    color="dark"
+                    sx={{ my: 3 }}
+                  >
+                    Aggiungi al carrello
+                  </Button>
+
+                  <div style={{display: "inline-flex", alignItems: "center"}}>
+                    <CardGiftcardRoundedIcon />
+                    <Typography variant="body2" color="initial" sx={{ml: 1}}>
+                      Confezione regalo disponibile.
+                    </Typography>
+                  </div>
                 </Box>
               </Grid>
             </Grid>

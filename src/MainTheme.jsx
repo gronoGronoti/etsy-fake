@@ -18,6 +18,7 @@ let MainTheme = createTheme({
   palette: {
     primary: { main: "#ffffff" },
     secondary: { main: "rgb(175, 175, 175)" },
+    dark: { main: "#242424" },
   },
   typography: {
     fontFamily: [
