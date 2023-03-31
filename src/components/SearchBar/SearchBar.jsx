@@ -26,7 +26,7 @@ const SearchBar = (props) => {
       }}
     >
       <div className="search-bar">
-        <OutlinedInput type="search" className="bar" placeholder="Cerca quello che vuoi" />
+        <OutlinedInput type="search" className="bar" placeholder="Cerca quello che vuoi" color="secondary" />
         <IconButton aria-label="search-bar-button" className="button" /*onClick={}*/>
           <SearchRoundedIcon />
         </IconButton>

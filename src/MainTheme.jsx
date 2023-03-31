@@ -13,11 +13,11 @@ let MainTheme = createTheme({
           backgroundColor: "rgba(0, 0, 0, 85%)"
         }
       }
-    }
+    },
   },
   palette: {
     primary: { main: "#ffffff" },
-    secondary: { main: "#FDEBD2" },
+    secondary: { main: "rgb(175, 175, 175)" },
   },
   typography: {
     fontFamily: [
