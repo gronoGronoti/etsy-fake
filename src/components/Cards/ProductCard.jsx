@@ -35,7 +35,7 @@ const ProductCard = (props) => {
           }}
         />
 
-        <CardContent class="product-area" sx={{ p: 0 }}>
+        <CardContent className="product-area" sx={{ p: 0 }}>
           <Typography className="product-name" variant="body1" color="initial">
             {props.title}
           </Typography>

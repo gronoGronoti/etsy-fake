@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+
+import "./ArticlePageStyle.css"
 
 import Slider from "react-slick";
 import { sliderSettings } from "./suggested-art-slider/ArticleSlider";
@@ -11,7 +13,7 @@ import { PopularItemsRN } from "../consts/IndexProductLinks";
 
 const SuggestedArticles = () => {
   return (
-    <Container maxWidth="xl" sx={{mb: 4}}>
+    <Container maxWidth="xl" className="add-margin-when-sizing">
       <div
         style={{
           display: "flex",
