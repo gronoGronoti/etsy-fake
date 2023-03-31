@@ -20,7 +20,7 @@ const Description = (props) => {
   return (
     <>
       <div className="always-show-this">
-        <Typography sx={{ fontWeight: 600, fontSize: "16px" }}>
+        <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
           Descrizione
         </Typography>
 
@@ -42,7 +42,7 @@ const Description = (props) => {
         <Collapse in={expanded}>
           <Card
             elevation={0}
-            sx={{ mt: 1, display: expanded ? "block" : "none" }}
+            sx={{ mt: 1 }}
           >
             <Typography variant="body1" color="initial">
               {props.desc}
