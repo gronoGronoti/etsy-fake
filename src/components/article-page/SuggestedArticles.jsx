@@ -2,59 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Slider from "react-slick";
+import { sliderSettings } from "./suggested-art-slider/ArticleSlider";
 
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import ProductCard from "../Cards/ProductCard";
-import Grid from "@mui/material/Grid";
 import { PopularItemsRN } from "../consts/IndexProductLinks";
 
 const SuggestedArticles = () => {
-  const sliderSettings = {
-    className: "center",
-    centerPadding: "60px",
-    infinite: false,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1470,
-        settings: {
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 970,
-        settings: {
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 530,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-    ]
-  };
-
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" sx={{mb: 4}}>
       <div
         style={{
           display: "flex",
@@ -80,23 +37,25 @@ const SuggestedArticles = () => {
         </Link>
       </div>
 
-      <Slider {...sliderSettings}>
-        {PopularItemsRN.map((Entry, i) => (
-          <ProductCard
-            to={`../listing/${Entry.articleId}`}
-            media={Entry.media}
-            title={Entry.alt}
-            price={Entry.price}
-            stars={Entry.stars}
-            reviews={Entry.reviews}
-            hasDiscount={Entry.hasDiscount ? Entry.hasDiscount : null}
-            oldPrice={Entry.hasDiscount ? Entry.oldPrice : null}
-            hasFreeShipping={
-              Entry.hasFreeShipping ? Entry.hasFreeShipping : null
-            }
-          />
-        ))}
-      </Slider>
+      <div style={{ width: "-webkit-fill-available" }}>
+        <Slider {...sliderSettings}>
+          {PopularItemsRN.map((Entry, i) => (
+            <ProductCard
+              to={`../listing/${Entry.articleId}`}
+              media={Entry.media}
+              title={Entry.alt}
+              price={Entry.price}
+              stars={Entry.stars}
+              reviews={Entry.reviews}
+              hasDiscount={Entry.hasDiscount ? Entry.hasDiscount : null}
+              oldPrice={Entry.hasDiscount ? Entry.oldPrice : null}
+              hasFreeShipping={
+                Entry.hasFreeShipping ? Entry.hasFreeShipping : null
+              }
+            />
+          ))}
+        </Slider>
+      </div>
     </Container>
   );
 };
