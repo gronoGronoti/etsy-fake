@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import Card from "@mui/material/Card";
+import CardActionArea from "@mui/material/CardActionArea";
 import Divider from "@mui/material/Divider";
 import Collapse from "@mui/material/Collapse";
 import Box from "@mui/material/Box";
@@ -19,31 +20,21 @@ const Description = (props) => {
 
   return (
     <>
-      <div className="always-show-this">
-        <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
-          Descrizione
-        </Typography>
+      <CardActionArea sx={{ py: 1.2, px: 2, borderRadius: "20px" }}>
+        <div className="always-show-this" onClick={toggleExpand}>
+          <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
+            Descrizione
+          </Typography>
 
-        <Tooltip title={expanded ? "Chiudi" : "Espandi"}>
-          <IconButton
-            aria-label="expand"
-            onClick={toggleExpand}
-            sx={{
-              transform: expanded && "rotate(180deg)",
-              transition: "transform .15s",
-            }}
-          >
+          <Tooltip title={expanded ? "Chiudi" : "Espandi"}>
             <ArrowDropDownCircleOutlined />
-          </IconButton>
-        </Tooltip>
-      </div>
+          </Tooltip>
+        </div>
+      </CardActionArea>
 
       <Box>
         <Collapse in={expanded}>
-          <Card
-            elevation={0}
-            sx={{ mt: 1 }}
-          >
+          <Card elevation={0} sx={{ mt: 1 }}>
             <Typography variant="body1" color="initial">
               {props.desc}
             </Typography>
