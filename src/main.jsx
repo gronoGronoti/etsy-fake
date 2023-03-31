@@ -8,6 +8,8 @@ import Router from './components/consts/Router'
 
 import './index.css'
 import MainTheme from './MainTheme'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
