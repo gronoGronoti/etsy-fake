@@ -3,8 +3,6 @@ import React from "react";
 import "./UlteriorStyles.css"
 
 export const sliderSettings = {
-  className: "center",
-  centerPadding: "60px",
   infinite: false,
   arrows: false,
   dots: true,
