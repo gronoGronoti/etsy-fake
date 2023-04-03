@@ -27,7 +27,12 @@ const Description = (props) => {
           </Typography>
 
           <Tooltip title={expanded ? "Chiudi" : "Espandi"}>
-            <ArrowDropDownCircleOutlined />
+            <ArrowDropDownCircleOutlined
+              sx={{
+                transform: expanded && "rotate(180deg)",
+                transition: "transform .15s",
+              }}
+            />
           </Tooltip>
         </div>
       </CardActionArea>

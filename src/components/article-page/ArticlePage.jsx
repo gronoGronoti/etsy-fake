@@ -34,7 +34,13 @@ const ArticlePage = () => {
               alignItems="top"
               wrap="wrap"
             >
-              <Grid xs={12} md={7} item id={i} sx={{ display: "flex", alignItems: "top" }}>
+              <Grid
+                xs={12}
+                md={7}
+                item
+                id={i}
+                sx={{ display: "flex", alignItems: "top" }}
+              >
                 <Container
                   className="image-container"
                   maxWidth="md"
@@ -59,82 +65,92 @@ const ArticlePage = () => {
               </Grid>
               <Grid xs={12} md={3.5} item id={i + 1}>
                 <Box sx={{ p: 2, width: "100%" }}>
-                  {entry.hasDiscount ? (
-                    <div className="price-w-discount">
+                  <section style={{margin:"0 12px"}}>
+                    {entry.hasDiscount ? (
+                      <div className="price-w-discount">
+                        <Typography
+                          variant="body1"
+                          sx={{ fontSize: 30, fontWeight: 700, mr: 2 }}
+                        >
+                          € {entry.price}
+                        </Typography>
+                        <Typography
+                          className="old-price"
+                          variant="body1"
+                          color="error"
+                        >
+                          € {entry.oldPrice}
+                        </Typography>
+                      </div>
+                    ) : (
                       <Typography
                         variant="body1"
-                        sx={{ fontSize: 30, fontWeight: 700, mr: 2 }}
+                        sx={{ fontSize: 30, fontWeight: 700 }}
                       >
                         € {entry.price}
                       </Typography>
-                      <Typography
-                        className="old-price"
-                        variant="body1"
-                        color="error"
-                      >
-                        € {entry.oldPrice}
-                      </Typography>
-                    </div>
-                  ) : (
+                    )}
                     <Typography
                       variant="body1"
-                      sx={{ fontSize: 30, fontWeight: 700 }}
+                      color="initial"
+                      sx={{ fontSize: "18px" }}
                     >
-                      € {entry.price}
+                      {entry.alt}
                     </Typography>
-                  )}
-                  <Typography
-                    variant="body1"
-                    color="initial"
-                    sx={{ fontSize: "18px" }}
-                  >
-                    {entry.alt}
-                  </Typography>
 
-                  <div className="seller-section">
-                    <div className="seller">
-                      <Typography variant="body2" color="initial">
-                        by
-                      </Typography>
-                      <Link
-                        to={`../sellers/${entry.seller}`}
-                        style={{ marginLeft: "5px" }}
+                    <div className="seller-section">
+                      <div className="seller">
+                        <Typography variant="body2" color="initial">
+                          by
+                        </Typography>
+                        <Link
+                          to={`../sellers/${entry.seller}`}
+                          style={{ marginLeft: "5px" }}
+                        >
+                          <Typography variant="body1">
+                            {entry.seller}
+                          </Typography>
+                        </Link>
+                      </div>
+
+                      <Button
+                        variant="text"
+                        sx={{ color: "red", mx: 2, textTransform: "none" }}
+                        startIcon={<FavoriteBorderRoundedIcon />}
                       >
-                        <Typography variant="body1">{entry.seller}</Typography>
-                      </Link>
+                        Segui
+                      </Button>
                     </div>
 
+                    <Ratings
+                      starNumber={entry.stars}
+                      numOfReviews={entry.reviews + " Recensioni"}
+                    />
+
+                    <QuantityTab />
+
                     <Button
-                      variant="text"
-                      sx={{ color: "red", mx: 2, textTransform: "none" }}
-                      startIcon={<FavoriteBorderRoundedIcon />}
+                      className="add-to-cart-btn"
+                      variant="contained"
+                      color="dark"
+                      sx={{ my: 3 }}
                     >
-                      Segui
+                      Aggiungi al carrello
                     </Button>
-                  </div>
 
-                  <Ratings
-                    starNumber={entry.stars}
-                    numOfReviews={entry.reviews + " Recensioni"}
-                  />
-
-                  <QuantityTab />
-
-                  <Button
-                    className="add-to-cart-btn"
-                    variant="contained"
-                    color="dark"
-                    sx={{ my: 3 }}
-                  >
-                    Aggiungi al carrello
-                  </Button>
-
-                  <div style={{ display: "inline-flex", alignItems: "center" }}>
-                    <CardGiftcardRoundedIcon />
-                    <Typography variant="body2" color="initial" sx={{ ml: 1 }}>
-                      Confezione regalo disponibile.
-                    </Typography>
-                  </div>
+                    <div
+                      style={{ display: "inline-flex", alignItems: "center" }}
+                    >
+                      <CardGiftcardRoundedIcon />
+                      <Typography
+                        variant="body2"
+                        color="initial"
+                        sx={{ ml: 1 }}
+                      >
+                        Confezione regalo disponibile.
+                      </Typography>
+                    </div>
+                  </section>
 
                   <Description desc={entry.alt} />
                 </Box>
